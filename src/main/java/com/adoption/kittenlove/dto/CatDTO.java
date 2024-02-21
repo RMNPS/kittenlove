@@ -1,8 +1,5 @@
-package com.adoption.kittenlove.data;
+package com.adoption.kittenlove.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import java.time.LocalDate;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,10 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(setterPrefix = "with")
-@Entity
-@Table(name = "cats")
-public class Cat extends AbstractEntity {
-
+public class CatDTO extends AbstractDTO {
     private String breed;
     private LocalDate birthdate;
     private String description;
