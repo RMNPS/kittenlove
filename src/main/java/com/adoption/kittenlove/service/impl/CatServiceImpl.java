@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CatServiceImpl implements CatService {
 
-    private CatRepository catRepository;
+    private final CatRepository catRepository;
 
     public CatServiceImpl(CatRepository catRepository) {
         this.catRepository = catRepository;

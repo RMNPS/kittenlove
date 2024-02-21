@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class GuardianServiceImpl implements GuardianService {
 
-    private GuardianRepository guardianRepository;
+    private final GuardianRepository guardianRepository;
 
     public GuardianServiceImpl(GuardianRepository guardianRepository) {
         this.guardianRepository = guardianRepository;

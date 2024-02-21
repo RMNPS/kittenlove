@@ -5,7 +5,6 @@ import com.adoption.kittenlove.dto.CatDTO;
 import com.adoption.kittenlove.exception.CatNotFoundException;
 import com.adoption.kittenlove.service.CatService;
 import java.util.List;
-import java.util.stream.Collectors;
 import org.modelmapper.ModelMapper;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
